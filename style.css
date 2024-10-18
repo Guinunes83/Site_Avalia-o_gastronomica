@@ -1,0 +1,58 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+header{
+    backdrop-filter: blur(05px);
+    padding: 10Px
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    letter-spacing: 10px;;
+}
+
+.container-categorias{
+    margin: center;
+    display: grid;
+    grid-template-areas:
+    'categoria01 categoria02'
+    'categoria03 categoria04';
+    justify-content: center;
+    gap: 50px ;
+}
+
+fieldset{
+    backdrop-filter: blur(05px);
+    display: flex;
+    height: 300px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, transparent, darkslateblue);
+    padding: 50px;
+    box-shadow: 05px 05px 10px black;
+    color: darkorange;
+    letter-spacing: 04px;
+    border-radius: 10%;
+
+}
+
+body{
+    background-image: url(assets/img/fundo-comida.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+button{
+    border-radius: 10%;
+    background-color: transparent;
+    cursor: pointer;
+    
+}
