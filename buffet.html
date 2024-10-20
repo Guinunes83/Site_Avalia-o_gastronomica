@@ -1,60 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+<link rel="stylesheet" href="style.css">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buffet</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buffet</title>
 </head>
 
+<header class="cabecalho">
+  <h1 class="title">The Lunch</h1>
+</header>
+
 <body>
-    <header class="cabecalho">
-        <h1 class="title">The Lunch</h1>
-    </header>
+  <section class="menu">
     <nav class="menu">
-        <a href="index.html" class="menu-home">Home</a>
-        <a href="buffet.html" class="menu-buffet">Buffet</a>
-        <a href="#" class="menu-Gourmet">Gourmet</a>
-        <a href="#" class="menu-Especial">Especial</a>
-        <div class="animation start-home"></div>
+      <a href="index.html" class="home">Home</a>
+      <a href="buffet.html" class="buffet">Buffet</a>
+      <a href="#" class="Gourmet">Gourmet</a>
+      <a href="#" class="Especial">Especial</a>
+      <div class="animation start-home"></div>
     </nav>
-</body>
-<section>
-    <div class="box">
-        <div class="container">
-            <div class="flip">
-                <div class="front">
-                </div>
-                <div class="back">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsa aliquam qui cumque, optio
-                        mollitia facilis illo repudiandae odio dolores consectetur fugit blanditiis error veniam quas
-                        pariatur iste rerum magni?</p>
-                </div>
-            </div>
+  </section>
+  <div class="box">
+    <div class="box__content">
+      <div class="box__front">
+        <h2>Restaurante Alcateia</h2>
+      </div>
 
-            <!--<div class="top-card1">
-    
-                </div>
-                <div class="title-card1">
-                </div>
-                <div class="text-card1">
-    
-                </div>
-                <div class="footer-card1">
-    
-                </div>-->
+      <div class="box__back">
+        <h2 class="title-card"><b></b>Restaurante Alcateia</h2>
+        <div class="text-card">
+            <p class="text"><hr><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum quae ducimus at aspernatur! Illo dolorum eius, esse nam, neque blanditiis optio voluptatem qui sed veritatis facere excepturi, nihil beatae culpa.
+            </p>
         </div>
-
+        <div class="rating">
+            <input value="5" name="rati" id="star5" type="radio">
+            <label title="text" for="star5"></label>
+            <input value="4" name="rati" id="star4" type="radio">
+            <label title="text" for="star4"></label>
+            <input value="3" name="rati" id="star3" type="radio">
+            <label title="text" for="star3"></label>
+            <input value="2" name="rati" id="star2" type="radio">
+            <label title="text" for="star2"></label>
+            <input value="1" name="rati" id="star1" type="radio">
+            <label title="text" for="star1"></label>
+        </div>
+        <div class="footer">
+<a href="#" class="a-button-detail">Detalhes</a>
+        </div>
+      </div>
     </div>
-    <div class="fooetr">
-
-    </div>
-
-
-
-
-    <script src="Script.js"></script>
-</section>
+  </div>
+</body>
 
 </html>
