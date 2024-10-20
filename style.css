@@ -1,5 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Potta+One&family=Slackey&display=swap');
+
+/*Fonts:
+"Handlee", cursive; - Texto
+"Slackey", sans-serif; - Logo
+"Potta One", system-ui;
+Palheta de Cores:
+https://paletadecores.com/paleta/4b1139/3b4058/2a6e78/7a907c/c9b180/
+*/
 
 * {
     margin: 0;
@@ -7,65 +14,151 @@
     box-sizing: border-box;
 }
 
-
 body {
-    background-image: url(assets/img/fundo-comida.jpg);
+    font-family: "Charm", cursive;
+    background-image: url(assets/img/fundo-comida.png);
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-repeat: no-repeat;
 }
 
-.banner {
-    padding: 50px;
-    display: flex;
+header {
     justify-content: center;
-    letter-spacing: 4px;
+    align-content: center;
+    margin: 20px auto;
+    height: 80px;
+    width: 300px;
+    background: transparent;
+    backdrop-filter: blur(50px);
+    border: solid 1px black;
+    box-shadow: 05px 05px 06px black;
 }
 
 h1 {
-    background-color: rgba(255, 255, 255, 0.6);
-    padding: 20px;
-    font-size: 3rem;
-    box-shadow: 0px 5px 10px black;
-    border: solid 1px black;
-    color: #063940;
-    font-family: "Sonsie One", system-ui;
+    text-shadow: 02px 02px 01px black;
+    color: #4b1139;
+    font-family: "Slackey", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+nav {
+    position: relative;
+    background-color: #4b1139;
+    margin: 30px auto 30px;
+    font-size: 0;
+    text-shadow: 0px 01px 2px black;
+    font-family: "Potta One", system-ui;
+}
+
+.animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    background: white;
+    border-radius: 10px;
+    transition: all .5s ease 0s;
+}
+
+a:nth-child(1) {
+    width: 100px;
+}
+
+.start-home,
+a:nth-child(1):hover~.animation {
+    width: 100px;
+    left: 0;
+}
+
+a:nth-child(2) {
+    width: 110px;
+}
+
+.start-buffet,
+a:nth-child(2):hover~.animation {
+    width: 110px;
+    left: 100px;
+}
+
+a:nth-child(3) {
+    width: 110px;
+}
+
+.start-Gourmet,
+a:nth-child(3):hover~.animation {
+    width: 110px;
+    left: 210px;
+}
+
+a:nth-child(4) {
+    width: 110px;
+}
+
+.start-Especial,
+a:nth-child(4):hover~.animation {
+    width: 110px;
+    left: 320px;
 }
 
 a {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #c9b180;
     text-decoration: none;
-    cursor: pointer;
-    color: #195e63;
-    font-family: "Marck Script", cursive;
-    font-size: 03rem;
+    line-height: 50px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
 }
 
-.home {
+section {
+    height: 100vh;
+    display: flex;
+    margin-top: 100px;
     justify-content: center;
-    display: grid;
-    grid-template-areas:
-        'categoria01 categoria02'
-        'categoria03 categoria04';
-    gap: 50px;
-
 }
 
-button {
-    height: 300px;
-    width: 250px;
-    border-radius: 15px;
-    border: solid #063940 1px;
-    box-shadow: 5px 10px 20px black;
+.container {
+    position: relative;
+    width: 350px;
+    height: 550px;
 }
 
-.b1{
+.container:houver {
+    transform: rotateY(180deg);
+}
+
+.flip {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: all 0,5s ease;
+}
+.front {
     background-image: url(assets/img/buffet.png);
     background-size: cover;
-    text-shadow: 1px 3px 1px black;
-
-
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px black;
+    backface-visibility: hidden;
+    border: solid 5px #3b4058;
 }
-
-.categoria01{
-    
+.back {
+    background-color: #c9b180;
+    transform: rotateY(180deg);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px black;
+    backface-visibility: hidden;
+    border: solid 5px #3b4058;
 }
