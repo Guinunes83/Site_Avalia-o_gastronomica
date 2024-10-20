@@ -138,12 +138,14 @@ section {
     height: 100%;
     cursor: pointer;
     transform-style: preserve-3d;
-    transition: ,5s;
+    transition: 0,5s;
     perspective: 700px;
 }
 .front {
-    background-image: url(assets/img/buffet.png);
+    background-image: url(assets/img/logo-restaurantes/logo-alcateia.png);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     position: absolute;
     width: 100%;
     height: 100%;
