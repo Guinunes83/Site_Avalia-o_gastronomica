@@ -128,7 +128,7 @@ section {
     height: 550px;
 }
 
-.container:houver {
+.container:houver .flip{
     transform: rotateY(180deg);
 }
 
@@ -138,7 +138,8 @@ section {
     height: 100%;
     cursor: pointer;
     transform-style: preserve-3d;
-    transition: all 0,5s ease;
+    transition: ,5s;
+    perspective: 700px;
 }
 .front {
     background-image: url(assets/img/buffet.png);
