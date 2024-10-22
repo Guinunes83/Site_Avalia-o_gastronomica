@@ -13,6 +13,7 @@ https://paletadecores.com/paleta/4b1139/3b4058/2a6e78/7a907c/c9b180/
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: "Roboto Condensed", sans-serif;
     background-image: url(assets/img/fundo-comida.png);
@@ -20,6 +21,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
+
 header {
     justify-content: center;
     align-content: center;
@@ -31,6 +33,7 @@ header {
     border: solid 1px black;
     box-shadow: 05px 05px 06px black;
 }
+
 h1 {
     text-shadow: 02px 02px 01px black;
     color: #4b1139;
@@ -40,6 +43,7 @@ h1 {
     align-items: center;
 
 }
+
 nav {
     position: relative;
     background-color: #4b1139;
@@ -48,6 +52,7 @@ nav {
     text-shadow: 0px 01px 2px black;
     font-family: "Potta One", system-ui;
 }
+
 .animation {
     position: absolute;
     height: 100%;
@@ -57,38 +62,47 @@ nav {
     border-radius: 10px;
     transition: all .5s ease 0s;
 }
+
 a:nth-child(1) {
     width: 100px;
 }
+
 .start-home,
 a:nth-child(1):hover~.animation {
     width: 100px;
     left: 0;
 }
+
 a:nth-child(2) {
     width: 110px;
 }
+
 .start-buffet,
 a:nth-child(2):hover~.animation {
     width: 110px;
     left: 100px;
 }
+
 a:nth-child(3) {
     width: 110px;
 }
+
 .start-Gourmet,
 a:nth-child(3):hover~.animation {
     width: 110px;
     left: 210px;
 }
+
 a:nth-child(4) {
     width: 110px;
 }
+
 .start-Especial,
 a:nth-child(4):hover~.animation {
     width: 110px;
     left: 320px;
 }
+
 a {
     font-size: 15px;
     text-transform: uppercase;
@@ -100,6 +114,7 @@ a {
     display: inline-block;
     text-align: center;
 }
+
 .box {
     background: transparent;
     perspective: 1000px;
@@ -107,6 +122,7 @@ a {
     justify-content: center;
     margin-top: 50px;
 }
+
 .box__content {
     background: transparent;
     width: 200px;
@@ -116,6 +132,7 @@ a {
     transform: rotateY(0deg);
     transition: transform 600ms ease-in-out;
 }
+
 .box__front,
 .box__back {
     align-content: bottom;
@@ -124,28 +141,31 @@ a {
     background-size: contain;
     background-repeat: no-repeat;
     border-radius: 10px;
-    border: solid   1px black;
+    border: solid 1px black;
     box-shadow: 04px 04px 02px black;
     position: absolute;
     width: 100%;
     height: 350px;
     backface-visibility: hidden;
 }
+
 .box__back {
     background: #c9b180;
     transform: rotateY(180deg);
     padding: 10px;
 }
-h2{
+
+h2 {
     overflow: hidden;
 }
 
 .box:hover .box__content {
     transform: rotateY(180deg);
 }
-.title-card{
-    display:flex;
-    justify-content:start;
+
+.title-card {
+    display: flex;
+    justify-content: start;
     align-items: botton;
     font-family: "Roboto Condensed", sans-serif;
     font-size: medium;
@@ -153,45 +173,18 @@ h2{
     color: #3b4058;
     text-shadow: 1px 1px 0px black;
 }
-hr{
+
+hr {
     border-color: #2a6e78;
 }
-.rating{
-    margin-right: 15px;
-}
-.rating:not(:checked) > input{
-    position: absolute;
-    appearance: none;
-}
-.rating:not(:checked) > label{
-    float: right;
-    cursor: pointer;
-    font-size: 30px;
-    color: #666;
-}
-.rating:not(:checked) > label:before{
-    content: "🍽";
-}
-.rating > input:checked + label:hover,
-.rating > input:checked + label:hover ~ label,
-.rating > input:checked + label:hover,
-.rating > input:checked + label:hover ~ label,
-.rating > input:checked + label:hover ~ label{
-    color: #e58e09;
-}
-.rating:not(:checked) > label:hover,
-.rating:not(:checked) > label:hover ~ label {
-    color: #ff9e0b;
-}
-.rating > input:checked ~ label {
-    color: #ffa723
-}
-.footer{
+
+.footer {
     margin-top: 10px;
     text-align: center;
     background-color: #4b1139;
 }
-.a-button-detail{
+
+.a-button-detail {
     color: white;
     padding: 16px;
     text-decoration: none;
